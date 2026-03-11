@@ -1,17 +1,121 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-.navbar { display: flex; justify-content: space-between; align-items: center; padding: 30px 100px; }
-.logo img { width: 160px; } /* Логотип */
-.nav-links { display: flex; list-style: none; gap: 40px; }
+body {
+    font-family: sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+}
 
-.hero { text-align: center; padding: 100px 20px; }
-.hero h1 { font-size: 56px; margin-bottom: 30px; }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    border-bottom: 1px solid #E5E5E5;
+}
 
-/* Обгортки для картинок, щоб вони не ламали дизайн */
-.image-wrapper { margin: 40px auto; display: flex; justify-content: center; }
+.logo img {
+    width: 100px;
+}
 
-.hero img { width: 100%; max-width: 1000px; } /* Збільшена Hero */
-.body-content img { width: 100%; max-width: 800px; } /* Збільшена Body */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
 
-.testimonials { text-align: center; padding: 60px 20px; }
-.avatar-wrapper img { width: 100px; border-radius: 50%; margin-bottom: 20px; }
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 15px;
+}
+
+.nav-auth .btn-text {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.nav-auth .btn-filled {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+}
+
+.btn-hero {
+    background-color: #18A0FB;
+    color: #ffffff;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 4px;
+    margin-bottom: 60px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.body-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.body-section h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.body-section p {
+    color: #666666;
+    margin-bottom: 40px;
+}
+
+.testimonials-section {
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 1px solid #f0f0f0;
+}
+
+.user-avatar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer {
+    padding: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #999999;
+}
