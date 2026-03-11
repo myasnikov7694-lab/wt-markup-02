@@ -3,60 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Community Project</title>
+    <title>Photo Community</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="./index.html">
-                    <img src="./images/logo.svg" alt="logo">
-                </a>
-            </div>
-            <ul>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Support</a></li>
-            </ul>
-            <div class="auth-buttons">
-                <button type="button" class="btn-login">Log in</button>
-                <button type="button" class="btn-register">Register</button>
-            </div>
-        </nav>
+    <header class="navbar">
+        <div class="logo">
+            <img src="./images/logo.svg" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+        <div class="nav-auth">
+            <button class="btn-text">Log in</button>
+            <button class="btn-filled">Register</button>
+        </div>
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero-section">
             <h1>The largest community of photo enthusiasts</h1>
-            <button type="button" class="btn-main">Join Today</button>
-            <div class="hero-image">
-                <img src="./images/hero.jpg" alt="Hero Image">
+            <button class="btn-hero">Join Today</button>
+            <div class="image-container">
+                <img src="./images/hero.jpg" alt="Hero">
             </div>
         </section>
 
-        <section class="content">
+        <section class="body-section">
             <h2>Snap photos and share like never before</h2>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-            <div class="body-image">
-                <img src="./images/body.jpg" alt="Body Content">
+            <div class="image-container">
+                <img src="./images/body.jpg" alt="Content">
             </div>
         </section>
 
-        <section class="testimonials">
-            <h2>You’re in good company</h2>
-            <div class="avatar">
-                <img src="./images/avatar.jpg" alt="User Avatar">
+        <section class="testimonials-section">
+            <h3>You’re in good company</h3>
+            <div class="user-avatar">
+                <img src="./images/avatar.jpg" alt="Avatar">
             </div>
-            <blockquote>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
-            </blockquote>
+            <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."</p>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <p>&copy; 2026 Photo Inc. All rights reserved.</p>
     </footer>
 
