@@ -1,34 +1,17 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-/* Збільшений логотип */
-.logo img {
-    width: 150px; 
-    display: block;
-}
-
-/* Навігація */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 100px;
-}
-
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 30px 100px; }
+.logo img { width: 160px; } /* Логотип */
 .nav-links { display: flex; list-style: none; gap: 40px; }
-.nav-links a { text-decoration: none; color: #333; font-size: 18px; }
 
-/* Збільшений заголовок Hero */
-.hero { text-align: center; padding: 80px 20px; }
+.hero { text-align: center; padding: 100px 20px; }
 .hero h1 { font-size: 56px; margin-bottom: 30px; }
 
-/* Збільшені зображення контенту */
-.hero img, .content img {
-    max-width: 900px;
-    width: 100%;
-    margin-top: 40px;
-}
+/* Обгортки для картинок, щоб вони не ламали дизайн */
+.image-wrapper { margin: 40px auto; display: flex; justify-content: center; }
 
-/* Секція відгуків */
-.testimonials { text-align: center; padding: 80px 20px; }
-.testimonials h3 { font-size: 32px; margin-bottom: 20px; }
-.avatar-container img { width: 80px; border-radius: 50%; }
+.hero img { width: 100%; max-width: 1000px; } /* Збільшена Hero */
+.body-content img { width: 100%; max-width: 800px; } /* Збільшена Body */
+
+.testimonials { text-align: center; padding: 60px 20px; }
+.avatar-wrapper img { width: 100px; border-radius: 50%; margin-bottom: 20px; }
